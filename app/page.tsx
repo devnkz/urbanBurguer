@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <div className={`${inter.className} w-full`}>
       <header className="fixed z-50 py-8 w-full h-24 flex justify-center items-center bg-white shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
-        <div className="max-w-[1380px] w-full flex justify-between items-center">
+        <div className="w-full lg:max-w-[1012px] 2xl:max-w-[1380px] flex justify-between items-center">
           <a
             href="#"
             className="group flex gap-2 text-xl items-center cursor-pointer hover:scale-105 duration-800"
@@ -103,7 +103,7 @@ export default function Home() {
             </h1>
           </a>
 
-          <nav className="hidden xl:block">
+          <nav className="hidden lg:block">
             <ul className="flex items-center gap-6 text-zinc-400">
               <li>
                 <a href="#cardapio" className="hover:text-black cursor-pointer">
@@ -136,18 +136,18 @@ export default function Home() {
       </header>
 
       <main className="bg-zinc-100 w-full flex flex-col items-center">
-        <div className="relative flex items-center my-28 xl:my-0 xl:h-screen max-w-[1380px] w-full xl:bg-[url('/img.jpg')] bg-cover bg-center">
+        <div className="relative flex items-center my-28 lg:my-14 2xl:my-0 lg:h-screen lg:max-w-[1012px] 2xl:max-w-[1380px] w-full lg:bg-[url('/img.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-linear-to-l from-zinc-100 via-transparent to-zinc-100"></div>
-          <div className="relative z-40 xl:mb-24 mx-4 xl:mx-0">
+          <div className="relative z-40 2xl:mb-24 mx-4 2xl:mx-0">
             <h1
-              className={`${changa.className} font-bold text-5xl xl:text-8xl`}
+              className={`${changa.className} font-bold text-5xl 2xl:text-8xl`}
             >
               URBAN{" "}
               <span className="text-white px-4 bg-orange-600">BURGUER</span>
               <br /> não é só um burger.
             </h1>
 
-            <h2 className="text-zinc-800 mt-6 text-sm w-full xl:text-lg xl:w-[400px]">
+            <h2 className="text-black mt-6 text-sm w-full 2xl:text-lg lg:w-[400px]">
               É o lugar onde sabor, experiência e personalidade se encontram — e
               transformam cada burger em uma experiência que fica na memória.
             </h2>
@@ -162,16 +162,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="cardapio" className="max-w-[1380px] w-full">
-          <div className="xl:my-16 mx-4 xl:mx-0">
+        <div
+          id="cardapio"
+          className="lg:max-w-[1012px] 2xl:max-w-[1380px] w-full"
+        >
+          <div className="2xl:my-16 mx-4 lg:mx-0">
             <h1
-              className={`${changa.className} font-bold text-4xl xl:text-5xl`}
+              className={`${changa.className} font-bold text-4xl 2xl:text-5xl`}
             >
               VEJA NOSSO <span className="text-orange-600">CARDÁPIO</span>
             </h1>
 
-            <div className="xl:my-8 space-y-4">
-              <p className="text-zinc-600 xl:mx-2">
+            <div className="2xl:my-8 space-y-4">
+              <p className="text-zinc-600 2xl:mx-2">
                 Aplique filtros para facilitar sua busca
               </p>
 
@@ -183,7 +186,7 @@ export default function Home() {
                     <button
                       key={opt.Nome}
                       onClick={() => setFiltro(opt.Nome)}
-                      className={`border-2 p-2 xl:mx-2 rounded-md transition-all ease-in-out duration-400 cursor-pointer
+                      className={`border-2 p-2 2xl:mx-2 rounded-md transition-all ease-in-out duration-400 cursor-pointer
                         ${
                           ativo
                             ? "bg-orange-600 border-orange-600 text-white"
@@ -207,11 +210,11 @@ export default function Home() {
                     {categoria}
                   </h2>
 
-                  <div className="w-[99%] xl:w-full flex flex-col gap-10 xl:flex-row xl:flex-wrap xl:gap-20">
+                  <div className="w-[99%] lg:w-full flex flex-col gap-10 lg:flex-row lg:flex-wrap 2xl:gap-20">
                     {itensPorCategoria[categoria].map((item: Item) => (
                       <div
                         key={item.id}
-                        className="group xl:w-1/5 h-auto bg-white shadow-xl rounded-tl-2xl rounded-br-2xl border-b-4 border-transparent
+                        className="group lg:w-1/5 h-auto bg-white shadow-xl rounded-tl-2xl rounded-br-2xl border-b-4 border-transparent
                         hover:border-b-orange-600 hover:scale-105 transition-all duration-300 cursor-pointer"
                       >
                         <Image
@@ -248,35 +251,35 @@ export default function Home() {
           id="avaliacoes"
           className="w-full bg-white flex justify-center relative"
         >
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-60 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-60 z-10 hidden lg:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
           </div>
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-90 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-90 z-10 hidden lg:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
           </div>
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-120 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-120 z-10 hidden lg:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
           </div>
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-150 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-150 z-10 hidden lg:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
           </div>
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-180 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-180 z-10 hidden lg:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
@@ -284,19 +287,19 @@ export default function Home() {
             <FaBurger />
           </div>
 
-          <div className="max-w-[1380px] w-full my-16 z-40 flex flex-col justify-center items-center">
+          <div className="lg:max-w-[1012px] 2xl:max-w-[1380px] w-full my-16 z-40 flex flex-col justify-center items-center">
             <h1
-              className={`${changa.className} font-bold text-6xl mx-4 xl:mx-0 xl:text-5xl`}
+              className={`${changa.className} font-bold text-6xl mx-4 2xl:mx-0 2xl:text-5xl`}
             >
               VEJA NOSSOS <span className="text-orange-600">CLIENTES</span>{" "}
               SATISFEITOS
             </h1>
 
-            <div className="flex flex-col space-y-8 xl:space-y-0 xl:flex-row gap-8 justify-between items-center w-full py-10">
+            <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row gap-8 justify-between items-center w-full py-10">
               {reviewsUsers.map((review) => (
                 <div
                   key={review.id}
-                  className="w-[90%] bg-zinc-100 border-2 border-transparent py-8 px-2 xl:px-4 hover:-translate-y-1 hover:shadow-xl hover:border-b-orange-600
+                  className="w-[90%] bg-zinc-100 border-2 border-transparent py-8 px-2 2xl:px-4 hover:-translate-y-1 hover:shadow-xl hover:border-b-orange-600
                 transition-all duration-300"
                 >
                   <div className="flex gap-4 items-center">
@@ -305,12 +308,12 @@ export default function Home() {
                       <AvatarFallback>NF</AvatarFallback>
                     </Avatar>
                     <h1
-                      className={`${changa.className} font-bold text-xl xl:text-3xl`}
+                      className={`${changa.className} font-bold text-xl 2xl:text-3xl`}
                     >
                       {review.nome}
                     </h1>
                   </div>
-                  <p className="text-zinc-800 text-sm xl:w-[400px] mt-2">
+                  <p className="text-zinc-800 text-sm 2xl:w-[400px] mt-2">
                     {review.review}
                   </p>
                   <div className="mt-2 flex text-yellow-500 text-xl gap-1">
@@ -334,38 +337,38 @@ export default function Home() {
         </div>
 
         <div className="max-w-[1380px] w-full bg-zinc-100 relative my-4">
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-0 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-0 z-10 hidden lg:flex">
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
           </div>
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-30 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-30 z-10 hidden lg:flex">
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
           </div>
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-60 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-60 z-10 hidden lg:flex">
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
           </div>
-          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-90 z-10 hidden xl:flex">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-90 z-10 hidden lg:flex">
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
           </div>
-          <div className="w-full flex flex-col my-24 xl:mx-0 justify-center items-center gap-4">
+          <div className="w-full flex flex-col my-24 2xl:mx-0 justify-center items-center gap-4">
             <h1
-              className={`${changa.className} font-bold text-3xl xl:text-5xl`}
+              className={`${changa.className} font-bold text-3xl lg:text-5xl`}
             >
               FICOU COM<span className="text-orange-600"> FOME</span> ?
             </h1>
 
-            <p className="text-sm text-center xl:text-lg mt-2 text-zinc-900 xl:w-3/5">
+            <p className="text-sm text-center lg:text-lg mt-2 text-zinc-900 lg:w-2/5">
               A gente prepara o burger do jeito que você gosta: rápido,
               suculento e com aquele toque urbano que faz a diferença. Explore o
               cardápio, combine sabores e peça sem complicação. Seu próximo
