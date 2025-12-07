@@ -11,7 +11,18 @@ import { FaStar } from "react-icons/fa";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { FaMotorcycle } from "react-icons/fa";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
-import { CiMail, CiPhone, CiMapPin } from "react-icons/ci";
+import { CiPhone, CiMapPin } from "react-icons/ci";
+
+import { BsList } from "react-icons/bs";
+
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const changa = Changa_One({
   weight: "400",
@@ -102,6 +113,51 @@ export default function Home() {
               URBAN <span className="text-orange-600">BURGUER</span>
             </h1>
           </a>
+
+          <div className="mr-8 mt-[7px] lg:hidden">
+            <Sheet>
+              <SheetTrigger>
+                <BsList className="text-4xl text-orange-600" />
+              </SheetTrigger>
+              <SheetContent className="bg-zinc-100 p-6">
+                <SheetHeader>
+                  <SheetTitle
+                    className={`${changa.className} font-bold text-3xl mt-8 mb-2`}
+                  >
+                    URBAN <span className="text-orange-600">BURGUER</span>
+                  </SheetTitle>
+                </SheetHeader>
+
+                {/* Navegação em coluna */}
+                <nav className="flex flex-col gap-6 mt-4">
+                  <a
+                    href="#"
+                    className="text-zinc-800 active:text-orange-600 font-semibold text-xl transition-colors"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="#cardapio"
+                    className="text-zinc-800 active:text-orange-600 font-semibold text-xl transition-colors"
+                  >
+                    Cardápio
+                  </a>
+                  <a
+                    href="#avaliacoes"
+                    className="text-zinc-800 active:text-orange-600 font-semibold text-xl transition-colors"
+                  >
+                    Avaliações
+                  </a>
+                  <a
+                    href="#contato"
+                    className="text-zinc-800 active:text-orange-600 font-semibold text-xl transition-colors"
+                  >
+                    Contato
+                  </a>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
 
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-6 text-zinc-400">
