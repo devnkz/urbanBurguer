@@ -136,7 +136,7 @@ export default function Home() {
       </header>
 
       <main className="bg-zinc-100 w-full flex flex-col items-center">
-        <div className="relative flex items-center my-28 xl:h-screen max-w-[1380px] w-full xl:bg-[url('/img.jpg')] bg-cover bg-center">
+        <div className="relative flex items-center my-28 xl:my-0 xl:h-screen max-w-[1380px] w-full xl:bg-[url('/img.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-linear-to-l from-zinc-100 via-transparent to-zinc-100"></div>
           <div className="relative z-40 xl:mb-24 mx-4 xl:mx-0">
             <h1
@@ -147,7 +147,7 @@ export default function Home() {
               <br /> não é só um burger.
             </h1>
 
-            <h2 className="text-zinc-800 mt-6 text-sm xl:text-lg w-[400px]">
+            <h2 className="text-zinc-800 mt-6 text-sm w-full xl:text-lg xl:w-[400px]">
               É o lugar onde sabor, experiência e personalidade se encontram — e
               transformam cada burger em uma experiência que fica na memória.
             </h2>
@@ -248,35 +248,35 @@ export default function Home() {
           id="avaliacoes"
           className="w-full bg-white flex justify-center relative"
         >
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-3 right-60 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-60 z-10 hidden xl:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
           </div>
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-3 right-90 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-90 z-10 hidden xl:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
           </div>
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-3 right-120 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-120 z-10 hidden xl:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
           </div>
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-3 right-150 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-150 z-10 hidden xl:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
             <FaBurger />
           </div>
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-3 right-180 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-3 right-180 z-10 hidden xl:flex">
             <FaBurger />
             <FaBurger />
             <FaBurger />
@@ -296,7 +296,7 @@ export default function Home() {
               {reviewsUsers.map((review) => (
                 <div
                   key={review.id}
-                  className="bg-zinc-100 border-2 border-transparent py-8 px-2 xl:px-4 hover:-translate-y-1 hover:shadow-xl hover:border-b-orange-600
+                  className="w-[90%] bg-zinc-100 border-2 border-transparent py-8 px-2 xl:px-4 hover:-translate-y-1 hover:shadow-xl hover:border-b-orange-600
                 transition-all duration-300"
                 >
                   <div className="flex gap-4 items-center">
@@ -304,11 +304,13 @@ export default function Home() {
                       <AvatarImage src={review.foto} className="object-cover" />
                       <AvatarFallback>NF</AvatarFallback>
                     </Avatar>
-                    <h1 className={`${changa.className} font-bold text-3xl`}>
+                    <h1
+                      className={`${changa.className} font-bold text-xl xl:text-3xl`}
+                    >
                       {review.nome}
                     </h1>
                   </div>
-                  <p className="text-zinc-800 w-[400px] mt-2">
+                  <p className="text-zinc-800 text-sm xl:w-[400px] mt-2">
                     {review.review}
                   </p>
                   <div className="mt-2 flex text-yellow-500 text-xl gap-1">
@@ -332,36 +334,38 @@ export default function Home() {
         </div>
 
         <div className="max-w-[1380px] w-full bg-zinc-100 relative my-4">
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-0 left-0 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-0 z-10 hidden xl:flex">
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
           </div>
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-0 left-30 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-30 z-10 hidden xl:flex">
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
           </div>
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-0 left-60 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-60 z-10 hidden xl:flex">
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
           </div>
-          <div className="text-orange-600 text-8xl flex flex-col gap-4 opacity-10 absolute top-0 left-90 z-10">
+          <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-90 z-10 hidden xl:flex">
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
             <FaMotorcycle />
           </div>
-          <div className="w-full flex flex-col my-24 mx-4 xl:mx-0 justify-center items-center gap-4">
-            <h1 className={`${changa.className} font-bold text-5xl`}>
+          <div className="w-full flex flex-col my-24 xl:mx-0 justify-center items-center gap-4">
+            <h1
+              className={`${changa.className} font-bold text-3xl xl:text-5xl`}
+            >
               FICOU COM<span className="text-orange-600"> FOME</span> ?
             </h1>
 
-            <p className="text-lg mt-2 text-zinc-900 w-full xl:w-3/5">
+            <p className="text-sm text-center xl:text-lg mt-2 text-zinc-900 xl:w-3/5">
               A gente prepara o burger do jeito que você gosta: rápido,
               suculento e com aquele toque urbano que faz a diferença. Explore o
               cardápio, combine sabores e peça sem complicação. Seu próximo
