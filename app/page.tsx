@@ -292,7 +292,7 @@ export default function Home() {
               SATISFEITOS
             </h1>
 
-            <div className="flex flex-col space-y-8 xl:flex-row justify-between items-center w-full py-10">
+            <div className="flex flex-col space-y-8 xl:space-y-0 xl:flex-row gap-8 justify-between items-center w-full py-10">
               {reviewsUsers.map((review) => (
                 <div
                   key={review.id}
