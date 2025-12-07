@@ -192,7 +192,7 @@ export default function Home() {
       </header>
 
       <main className="bg-zinc-100 w-full flex flex-col items-center">
-        <div className="relative flex items-center my-28 sm:my-7 lg:my-14 2xl:my-0 sm:h-[50vh] sm:max-w-[700px] lg:max-w-[1012px] 2xl:max-w-[1380px] w-full lg:bg-[url('/img.jpg')] bg-cover bg-center">
+        <div className="relative flex items-center my-28 sm:my-7 lg:my-14 2xl:my-0 sm:h-[50vh] lg:h-screen sm:max-w-[700px] lg:max-w-[1012px] 2xl:max-w-[1380px] w-full lg:bg-[url('/img.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-linear-to-l from-zinc-100 via-transparent to-zinc-100"></div>
           <div className="relative z-40 2xl:mb-24 mx-4 sm:mx-0">
             <h1
