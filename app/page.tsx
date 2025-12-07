@@ -114,7 +114,7 @@ export default function Home() {
             </h1>
           </a>
 
-          <div className="mr-8 lg:hidden">
+          <div className="mr-8 mt-[3px] lg:hidden">
             <Sheet>
               <SheetTrigger>
                 <BsList className="text-4xl text-orange-600" />
