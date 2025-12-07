@@ -1,0 +1,76 @@
+{
+  "cardapio": [
+    {
+      "id": 1,
+      "nome": "Urban Classic",
+      "descricao": "Hambúrguer suculento com queijo cheddar, alface, tomate e molho especial.",
+      "valor": 25.90,
+      "imagem": "/lanche-na-chapa.jpg",
+      "tipo": "lanche"
+    },
+    {
+      "id": 2,
+      "nome": "Bacon Supreme",
+      "descricao": "Hambúrguer duplo, bacon crocante, cebola caramelizada e maionese defumada.",
+      "valor": 32.50,
+      "imagem": "/lanche-na-chapa.jpg",
+      "tipo": "lanche"
+    },
+    {
+      "id": 3,
+      "nome": "Veggie Delight",
+      "descricao": "Hambúrguer de grão-de-bico, rúcula, tomate seco e molho de tahine.",
+      "valor": 27.00,
+      "imagem": "/lanche-na-chapa.jpg",
+      "tipo": "lanche"
+    },
+    {
+      "id": 4,
+      "nome": "Spicy Chicken",
+      "descricao": "Peito de frango empanado com molho picante, alface e queijo prato.",
+      "valor": 28.50,
+      "imagem": "/lanche-na-chapa.jpg",
+      "tipo": "lanche"
+    },
+    {
+      "id": 5,
+      "nome": "Refrigerante Lata",
+      "descricao": "Coca-Cola ou Guaraná, 350ml.",
+      "valor": 6.00,
+      "imagem": "/refri.webp",
+      "tipo": "bebida"
+    },
+    {
+      "id": 6,
+      "nome": "Suco Natural",
+      "descricao": "Suco de laranja ou abacaxi, 300ml.",
+      "valor": 8.50,
+      "imagem": "/suco.jpg",
+      "tipo": "bebida"
+    },
+    {
+      "id": 7,
+      "nome": "Brownie com Sorvete",
+      "descricao": "Brownie quentinho servido com uma bola de sorvete de creme.",
+      "valor": 15.00,
+      "imagem": "/brownie.jpg",
+      "tipo": "sobremesa"
+    },
+    {
+      "id": 8,
+      "nome": "Cheesecake de Morango",
+      "descricao": "Tradicional cheesecake com cobertura de morango fresco.",
+      "valor": 17.50,
+      "imagem": "/chess.webp",
+      "tipo": "sobremesa"
+    },
+    {
+      "id": 9,
+      "nome": "Petit Gateau",
+      "descricao": "Bolo de chocolate quente servido com sorvete de baunilha.",
+      "valor": 18.00,
+      "imagem": "/petit.jpg",
+      "tipo": "sobremesa"
+    }
+  ]
+}
