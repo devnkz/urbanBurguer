@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <div className={`${inter.className} w-full`}>
       <header className="fixed z-50 py-8 w-full h-24 flex justify-center items-center bg-white shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
-        <div className="w-full lg:max-w-[1012px] 2xl:max-w-[1380px] flex justify-between items-center">
+        <div className="w-full sm:max-w-[700px] lg:max-w-[1012px] 2xl:max-w-[1380px] flex justify-between items-center">
           <a
             href="#"
             className="group flex gap-2 text-xl items-center cursor-pointer hover:scale-105 duration-800"
@@ -136,9 +136,9 @@ export default function Home() {
       </header>
 
       <main className="bg-zinc-100 w-full flex flex-col items-center">
-        <div className="relative flex items-center my-28 lg:my-14 2xl:my-0 lg:h-screen lg:max-w-[1012px] 2xl:max-w-[1380px] w-full lg:bg-[url('/img.jpg')] bg-cover bg-center">
+        <div className="relative flex items-center my-28 sm:my-7 lg:my-14 2xl:my-0 sm:h-[50vh] sm:max-w-[700px] lg:max-w-[1012px] 2xl:max-w-[1380px] w-full lg:bg-[url('/img.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-linear-to-l from-zinc-100 via-transparent to-zinc-100"></div>
-          <div className="relative z-40 2xl:mb-24 mx-4 2xl:mx-0">
+          <div className="relative z-40 2xl:mb-24 mx-4 sm:mx-0">
             <h1
               className={`${changa.className} font-bold text-5xl 2xl:text-8xl`}
             >
@@ -147,7 +147,7 @@ export default function Home() {
               <br /> não é só um burger.
             </h1>
 
-            <h2 className="text-black mt-6 text-sm w-full 2xl:text-lg lg:w-[400px]">
+            <h2 className="text-black mt-6 text-sm w-full sm:text-lg sm:w-[400px]">
               É o lugar onde sabor, experiência e personalidade se encontram — e
               transformam cada burger em uma experiência que fica na memória.
             </h2>
@@ -164,9 +164,9 @@ export default function Home() {
 
         <div
           id="cardapio"
-          className="lg:max-w-[1012px] 2xl:max-w-[1380px] w-full"
+          className="sm:max-w-[700px] lg:max-w-[1012px] 2xl:max-w-[1380px] w-full"
         >
-          <div className="2xl:my-16 mx-4 lg:mx-0">
+          <div className="2xl:my-16 mx-4 sm:mx-0">
             <h1
               className={`${changa.className} font-bold text-4xl 2xl:text-5xl`}
             >
@@ -210,11 +210,11 @@ export default function Home() {
                     {categoria}
                   </h2>
 
-                  <div className="w-[99%] lg:w-full flex flex-col gap-10 lg:flex-row lg:flex-wrap 2xl:gap-20">
+                  <div className="w-[99%] sm:w-full flex flex-col gap-10 sm:flex-row sm:flex-wrap 2xl:gap-20">
                     {itensPorCategoria[categoria].map((item: Item) => (
                       <div
                         key={item.id}
-                        className="group lg:w-1/5 h-auto bg-white shadow-xl rounded-tl-2xl rounded-br-2xl border-b-4 border-transparent
+                        className="group sm:w-[47%] lg:w-1/5 h-auto bg-white shadow-xl rounded-tl-2xl rounded-br-2xl border-b-4 border-transparent
                         hover:border-b-orange-600 hover:scale-105 transition-all duration-300 cursor-pointer"
                       >
                         <Image
@@ -287,7 +287,7 @@ export default function Home() {
             <FaBurger />
           </div>
 
-          <div className="lg:max-w-[1012px] 2xl:max-w-[1380px] w-full my-16 z-40 flex flex-col justify-center items-center">
+          <div className="sm:max-w-[700px] lg:max-w-[1012px] 2xl:max-w-[1380px] w-full my-16 z-40 flex flex-col justify-center items-center">
             <h1
               className={`${changa.className} font-bold text-6xl mx-4 2xl:mx-0 2xl:text-5xl`}
             >
@@ -336,7 +336,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-[1380px] w-full bg-zinc-100 relative my-4">
+        <div className="sm:max-w-[700px] lg:max-w-[1380px] w-full bg-zinc-100 relative my-4">
           <div className="text-orange-600 text-8xl flex-col gap-4 opacity-10 absolute top-0 left-0 z-10 hidden lg:flex">
             <FaMotorcycle />
             <FaMotorcycle />
@@ -363,12 +363,12 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col my-24 2xl:mx-0 justify-center items-center gap-4">
             <h1
-              className={`${changa.className} font-bold text-3xl lg:text-5xl`}
+              className={`${changa.className} font-bold text-3xl sm:text-5xl`}
             >
               FICOU COM<span className="text-orange-600"> FOME</span> ?
             </h1>
 
-            <p className="text-sm text-center lg:text-lg mt-2 text-zinc-900 lg:w-2/5">
+            <p className="text-sm text-center sm:text-lg mt-2 text-zinc-900 lg:w-2/5">
               A gente prepara o burger do jeito que você gosta: rápido,
               suculento e com aquele toque urbano que faz a diferença. Explore o
               cardápio, combine sabores e peça sem complicação. Seu próximo
@@ -390,7 +390,7 @@ export default function Home() {
         id="contato"
         className="w-full bg-white text-black py-20 px-6 border-t border-zinc-200"
       >
-        <div className="max-w-[1380px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="sm:max-w-[700px] lg:max-w-[1380px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* LOGO + TEXTO */}
           <div className="flex flex-col gap-4">
             <h2 className={`${changa.className} text-4xl font-bold`}>
@@ -435,9 +435,6 @@ export default function Home() {
               </li>
               <li className="flex gap-2">
                 <CiMapPin className="text-xl" /> Rua Urban, 404 — Centro
-              </li>
-              <li className="flex gap-2">
-                <CiMail className="text-xl" /> contato@urbanburguer.com
               </li>
             </ul>
 
